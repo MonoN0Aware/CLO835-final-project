@@ -3,36 +3,6 @@
 
 This project demonstrates the deployment of a full-stack application on a Kubernetes cluster, including a Node.js backend, a MongoDB database, and an Nginx frontend. The application is containerized using Docker and orchestrated with Kubernetes, using ConfigMaps for environment management and Persistent Volumes for data storage.
 
- Project Structure
-
-
-kubernetes-fullstack-app/
-├── Backend/            Node.js API server
-│   ├── Dockerfile
-│   ├── server.js
-│   ├── package.json
-│   └── package-lock.json
-├── Frontend/           Nginx frontend serving static files
-│   ├── Dockerfile
-│   └── dist/
-└── k8s/                Kubernetes manifests
-    ├── namespace.yaml
-    ├── mongo/
-    │   ├── mongo-deployment.yaml
-    │   ├── mongo-service.yaml
-    │   ├── mongo-pv.yaml
-    │   ├── mongo-pvc.yaml
-    │   ├── mongo-configmap.yaml
-    │   ├── mongo-secret.yaml
-    ├── backend/
-    │   ├── node-deployment.yaml
-    │   ├── node-service.yaml
-    │   ├── node-configmap.yaml
-    └── frontend/
-        ├── nginx-deployment.yaml
-        ├── nginx-service.yaml
-
-
  Prerequisites
 
 - Docker
